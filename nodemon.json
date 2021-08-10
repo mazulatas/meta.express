@@ -1,0 +1,14 @@
+{
+    "watch": [
+        "config",
+        "src",
+        "test-server",
+        ".env"
+    ],
+    "ext": "js,ts,json",
+    "ignore": [
+        "src/**/*.spec.ts",
+        "src/**/*.test.ts"
+    ],
+    "exec": "node --max-old-space-size=8192 -- node_modules/.bin/ts-node --transpile-only -P tsconfig.test_app.json test-server/app.ts"
+}
